@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+    <head>
+        <title>Checklista</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/lista.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <div align="right"><a href="/admin/"><i>admin panel...</i></a></div>
+        <div>
+            <h1><a href="/">Dokumentacja powykonawcza - spis treści</a></h1>
+        </div>
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>

@@ -1,0 +1,23 @@
+
+h2 {
+    padding-left: 15px;
+    font-weight: 900;
+}
+
+h3 {
+    padding-left: 45px;
+    font-weight: 700;
+}
+
+h4 {
+    padding-left: 75px;
+}
+
+body {
+    background-color: #ffeb99;
+}
+
+h1 a {
+    font-family: 'Lobster';
+    font-size: 45px;
+}
