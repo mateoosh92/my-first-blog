@@ -10,7 +10,7 @@
                     <h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.drugi }}</a></h3>
                     <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.trzeci }}</a></h4> 
                     {% if post.comments.count > 0 %} ({{ post.comments.count }}) {% endif %}  
-                    {% if post.done == True %} --OK-- {% endif %}
+                    <!--{% if post.done == True %} --OK-- {% endif %}-->
                 </p>  
                 
             </div>
