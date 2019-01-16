@@ -9,8 +9,8 @@
                     <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.pierwszy }}</a></h2>
                     <h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.drugi }}</a></h3>
                     <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.trzeci }}</a></h4> 
-                    {% if post.comments.count > 0 %} ({{ post.comments.count }}) {% endif %}  
-                    <!--{% if post.done == True %} --OK-- {% endif %}-->
+                    {% if post.comments.count > 0 %} Uwagi: ({{ post.comments.count }}) {% endif %}  
+                    <font color="green">{% if post.done == True %} 100% Kompletne {% endif %}</font>
                 </p>  
                 
             </div>
