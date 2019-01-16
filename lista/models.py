@@ -4,6 +4,7 @@ from django.utils import timezone
 # Create your models here.
 
 class Post(models.Model):
+    done=models.BooleanField(default=False)
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title=models.CharField(max_length=200)
     pierwszy=models.TextField(blank=True, null=True)
@@ -11,6 +12,11 @@ class Post(models.Model):
     trzeci=models.TextField(blank=True, null=True)
     created_date=models.DateTimeField(default=timezone.now)
     published_date=models.DateTimeField(blank=True, null=True)
+    
+
+    def done_method(self):
+        self.done = True
+        self.save()
 
     def publish(self):
         self.published_date=timezone.now()
